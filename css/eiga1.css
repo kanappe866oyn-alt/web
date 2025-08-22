@@ -1,0 +1,296 @@
+h1{
+    background:linear-gradient(to right, rgb(110, 104, 104),rgb(228, 218, 218)); 
+    width: 100%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+ }
+ body{
+     margin:0;
+     background:linear-gradient(to right, rgb(243, 207, 5),rgb(230, 206, 76),rgb(140, 221, 140))
+ }
+ 
+ .daimei{
+     background-image: url(../images/gazo1.gif);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding-bottom: 20px;
+     position: relative;
+     height: auto;
+ }
+ .daimei h2{
+    margin: 0;
+    color: azure;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+ }
+
+ main{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ 
+ 
+ .kanso{
+    background-image: url(../images/gazo2.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+ }
+ .text{
+   overflow: hidden;
+}
+ .section_title{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+    font-family: serif;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 4.0s ease-out,opacity 0.8s ease-out;
+    z-index: 1;
+ }
+ .section_title.is-animated1{
+    opacity: 1;
+    transform: translateY(0);
+ }
+ .line_anm{
+   display: block;
+   position: relative;
+   height: 2px;
+   margin-bottom: 20px ;
+}
+.line_anm::after{
+   background: linear-gradient(to right, green 0%, rgb(65, 211, 65) 50%, rgb(177, 238, 177) 100%);
+   content: '';
+   display: block;
+   height: 2px;
+   width: 0;
+   transform: translateX(-50%);
+   transition: 2.0s cubic-bezier(0.22, 1, 0.36, 1);
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   z-index: 1;
+ }
+ .line_anm.is-animated::after{
+   width: 100%;
+ }
+ .intro_title1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+ }
+ .kanso_naiyo{
+   text-align: center;
+}
+ 
+.saigo1{
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+ }
+   
+ .movie_image{
+    text-align: center;
+    opacity: 0;
+    transform: translate(-100%,-100%);
+    animation: slideIn 1s forwards;
+    overflow: hidden;
+ }
+ @keyframes slideIn{
+    to{
+        opacity:1;
+        transform: translate(0,0);
+    }
+ }
+ .show{
+    opacity: 1;
+    animation: slideIn 1s forwards;
+ }
+ .intro_title2{
+   font-size: 20px;
+   color: red;
+   font-weight: 500;
+   text-align: center;
+}
+.intro_title2-a{
+   text-align: center;
+}
+ .naiyo2{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ 
+ .yokoku{
+    text-align: center;
+ }
+ 
+ .character{
+    background-color: yellow;
+    background-size:100% ;
+    width: 100%;
+    height: 100%;
+ }
+ .syokai{
+     border-radius: 20px;
+     padding: 40px;
+     position: relative;
+     display: flex;
+     gap: 0px 30px;
+     margin-top: 20px;
+     background-color: #000;
+ }
+ .syokai_contents{
+    color: azure;
+ }
+ .syokai_image{
+     width: 150px;
+     height: auto;
+     flex-shrink: 0;   
+ }
+
+ .syokai_image img{
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+ .syokai_contents h4{
+     color: yellow;
+     font-size: 16px;
+     margin: 0;
+ }
+
+ .sub_character{
+     background-color: black;
+     margin-top: 20px;
+     border-radius: 20px;
+ }
+ .sonota{
+    color: azure;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    font-family: serif;  
+ }
+ .sub_character_image{
+     text-align: center;
+ }
+ .sub_character_image p{
+     color: yellow;
+     border-bottom: 1px solid yellowgreen;
+ }
+ 
+ .line{
+     width: 200px;
+     height: 1px;
+     border: 0px;
+     padding: 0px;
+     background-color: yellowgreen;
+     margin: 120px auto;
+ }
+ .ongaku{
+   width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+ }
+ .ongaku_title{
+     color: red;
+     text-align: center;
+     font-size: 18px;
+     padding-bottom: 10px;
+ }
+ 
+ .ongaku_main{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: flex-start;
+     align-items: stretch;
+     gap: 20px;
+     overflow: hidden;
+ }
+ .ongaku_item{
+     display: block;
+     width: 235px;
+     height: auto;
+     position: relative;
+     border-radius: 10px;
+     overflow: hidden;
+     flex-shrink: 0;
+     left: 0px;
+     transition: left 0.5s ease-out;
+ }
+ .ongaku_iflrame{
+     display: block;
+     width: 100%;
+     height: auto;
+     z-index: 0;
+     transition: transform 0.5s linear;
+ }
+ 
+
+ 
+ .footer{
+     background-color: #000;
+     color: #FFF;
+     text-align: center;
+     padding: 20px;
+     margin-top: 200px;
+     font-size: 10px;
+     line-height: 16px;
+ }
+ .footer a{
+     color: #FFF;
+ }
+ 
+ .ongaku_migi{
+    width: 10px;
+    height: 10px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    left: -60px;
+    bottom: 60px;
+ }
+ .ongaku_hidari{
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    right: -60px;
+    bottom: 60px;
+ }
+ .disable{
+    opacity: 0.2;
+ }
+ .betu{
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: right;
+ }
+ .hutatume img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: right;
+    margin-left: auto;
+ }

@@ -1,0 +1,318 @@
+h1{
+    background:linear-gradient(to right, rgb(56, 56, 236),rgb(121, 121, 226),rgb(168, 185, 216)); 
+    width: 100%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+ }
+ body{
+    background:linear-gradient(to right,rgb(64, 64, 240),rgb(28, 79, 248),rgb(126, 126, 224));
+     margin:0;
+ }
+ 
+ .daimei1{
+     background-image: url(../images2/gazo1.gif);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding-bottom: 20px;
+     position: relative;
+ }
+ .daimei1 h2{
+     margin: 0;
+     color: white;
+     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     position: relative;
+ }
+
+ main{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ 
+ 
+ .kanso{
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+ }
+ .text{
+   overflow: hidden;
+}
+.section_title{
+   font-size: 30px;
+   color: rgb(91, 8, 247);
+   padding-bottom: 10px;
+   font-family: serif;
+   text-align: center;
+   opacity: 0;
+   transform: translateY(0);
+   transition: transform 4.0s ease-out,opacity 0.8s ease-out;
+   z-index: 1;
+}
+.section_title.is-animated2{
+   opacity: 1;
+   transform: translateY(0);
+}
+.line_anm{
+   display: block;
+   position: relative;
+   height: 2px;
+   margin-bottom: 20px ;
+}
+.line_anm::after{
+   background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+   content: '';
+   display: block;
+   height: 2px;
+   width: 0;
+   transform: translateX(-50%);
+   transition: 2.0s cubic-bezier(0.22, 1, 0.36, 1);
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   z-index: 1;
+ }
+ .line_anm.is-animated::after{
+   width: 100%;
+ }
+ .intro_title1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(73, 73, 139);
+ }
+ .kanso_naiyo1{
+   text-align: left;
+   padding-left: 100px;
+   color: azure;
+   padding-right: 100px;
+}
+.saigo1{
+  text-align: right;
+  padding-right: 40px;
+  color: rgb(121, 207, 207);
+}
+.movie_image{
+   text-align: center;
+   opacity: 0;
+   transform: translate(-100%,-100%);
+   animation: slideIn 1s forwards;
+   overflow: hidden;
+}
+@keyframes slideIn{
+   to{
+       opacity:1;
+       transform: translate(0,0);
+   }
+}
+ .intro_title2{
+    font-size: 20px;
+    color: red;
+    font-weight: 500;
+    text-align: center;
+ }
+.intro_title2-a{
+    text-align: center;
+}
+ .naiyo2{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ 
+ .yokoku{
+    text-align: center;
+ }
+ 
+ .character{
+    background-color: yellow;
+    background-size:100% ;
+    width: 100%;
+    height: 100%;
+ }
+ .syokai1{
+     border-radius: 20px;
+     padding: 40px;
+     position: relative;
+     display: flex;
+     gap: 0px 30px;
+     margin-top: 20px;
+     background-color: rgb(21, 21, 74);
+ }
+ .syokai1_contents{
+    color: azure;
+ }
+ .syokai1_image{
+     width: 150px;
+     height: auto;
+     flex-shrink: 0;   
+ }
+
+ .syokai1_image img{
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+ .syokai1_contents h4{
+     color: yellow;
+     font-size: 16px;
+     margin: 0;
+ }
+
+ .sub_character{
+     background-color: black;
+     margin-top: 20px;
+     border-radius: 20px;
+     text-align: center;
+ }
+ 
+ .sub_character_image{
+     text-align: center;
+ }
+ .sub_character_image p{
+     color: yellow;
+     border-bottom: 1px solid yellowgreen;
+     text-align: center;
+ }
+ .sonota{
+   color: azure;
+   font-size: 30px;
+   font-weight: 400;
+   text-align: center;
+   font-family: serif;  
+}
+ 
+ .line{
+     width: 200px;
+     height: 1px;
+     border: 0px;
+     padding: 0px;
+     background-color: rgb(53, 53, 218);
+     margin: 120px auto;
+ }
+
+ 
+
+ .tue_blacklayer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: opacity 0.5s linear;
+}
+.tue_dotlayer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images2/hero_bg_dot.png);
+    opacity: 0.3;
+    z-index: 2;
+    transition: opacity 0.5s linear;
+}
+ .tue_item:hover .tue_blacklayer{
+    opacity:0;
+ }
+ .tue_item:hover .tue_dotlayer{
+    opacity: 0;
+ }
+ .tue_item:hover .tue_image{
+    transform: scale(1.1);
+ }
+ .disable{
+    opacity: 0.2;
+ }
+ 
+ .tue{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.tue_main{
+display: flex;
+flex-flow: row nowrap;
+justify-content: flex-start;
+align-items: stretch;
+gap: 20px;
+overflow: hidden;
+}
+.tue_item{
+display: block;
+width: 235px;
+height: auto;
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+flex-shrink: 0;
+left: 0px;
+transition: left 0.5s ease-out;
+}
+.tue_item img{
+height: 300px;
+}
+.tue_migi{
+width: 10px;
+height: 10px;
+border: 0;
+padding: 0;
+margin: 0;
+background-color: transparent;
+position: absolute;
+left: -60px;
+bottom: 60px;
+}
+.tue_hidari{
+width: 40px;
+height: 40px;
+border: 0;
+padding: 0;
+margin: 0;
+background-color: transparent;
+position: absolute;
+right: -60px;
+bottom: 60px;
+}
+.migihidari{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+ .betu{
+    font-size: 20px;
+    padding-top: 20px;
+ }
+ .betu1{
+    font-size: 20px;
+    padding-top: 30px;
+ }
+ .footer{
+   background-color: #000;
+   color: #FFF;
+   text-align: center;
+   padding: 20px;
+   margin-top: 200px;
+   font-size: 10px;
+   line-height: 16px;
+}
+.footer a{
+   color: #FFF;
+}
+
+  

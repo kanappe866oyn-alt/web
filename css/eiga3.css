@@ -1,0 +1,217 @@
+h1{
+    background:linear-gradient(brown,rgb(233, 119, 119),rgb(241, 11, 11)); 
+    width: 100%;
+    height: auto;
+    color:azure ;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+ }
+ body{
+     margin:0;
+     background:linear-gradient(red,rgb(236, 111, 111),rgb(224, 50, 108));
+ }
+ 
+ .daimei2{
+     background-image: url(../image3/gazo1.gif);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding-bottom: 20px;
+     position: relative;
+     height: auto;
+ }
+ .daimei2 h2{
+     margin: 0;
+     color: white;
+     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     position: relative;
+ }
+
+ main{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ 
+ 
+ 
+ .kanso{
+    background-color: brown;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+ }
+ .text{
+   overflow: hidden;
+}
+
+ .section_title{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+    font-family: serif;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 4.0s ease-out,opacity 0.8s ease-out;
+    z-index: 1;
+ }
+ .section_title.is-animated3{
+    opacity: 1;
+    transform: translateY(0);
+ }
+ .line_anm{
+   display: block;
+   position: relative;
+   height: 2px;
+   margin-bottom: 20px ;
+}
+.line_anm::after{
+   background: linear-gradient(to right, gold,rgb(235, 211, 74),rgb(223, 216, 181));
+   content: '';
+   display: block;
+   height: 2px;
+   width: 0;
+   transform: translateX(-50%);
+   transition: 2.0s cubic-bezier(0.22, 1, 0.36, 1);
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   z-index: 1;
+ }
+ .line_anm.is-animated::after{
+   width: 100%;
+ }
+ .intro_title1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+ }
+ .kanso_naiyo1{
+   text-align: center;
+}
+.saigo1{
+   text-align: right;
+   padding-right: 40px;
+   font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.movie_image{
+   text-align: center;
+   opacity: 0;
+   transform: translate(-100%,-100%);
+   animation: slideIn 1s forwards;
+   overflow: hidden;
+}
+@keyframes slideIn{
+   to{
+       opacity:1;
+       transform: translate(0,0);
+   }
+}
+ .intro_title2{
+    font-size: 20px;
+    color: rgb(182, 240, 23);
+    font-weight: 500;
+    text-align: center;
+ }
+.intro_title2-a{
+    text-align: center;
+}
+ .naiyo2{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ 
+ .yokoku3{
+    text-align: center;
+ }
+ 
+ .character{
+    background-color: yellow;
+    background-size:100% ;
+    width: 100%;
+    height: 100%;
+ }
+ .syokai3{
+     border-radius: 20px;
+     padding: 40px;
+     position: relative;
+     display: flex;
+     gap: 0px 30px;
+     margin-top: 20px;
+     background-color: brown;
+ }
+ .syokai3_contents{
+    color: azure;
+ }
+ .syokai3_image{
+     width: 150px;
+     height: auto;
+     flex-shrink: 0;   
+ }
+
+ .syokai3_image img{
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+ .syokai3_contents h4{
+     color: yellow;
+     font-size: 16px;
+     margin: 0;
+ }
+.sub{
+    background-color: brown;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+.sonota{
+   text-align: center;
+   color: azure;
+   font-size: 30px;
+   font-family: serif;
+}
+.sub_character_image{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.b{
+    display: grid;
+    grid-template-columns:  250px;;
+    gap: 10px;
+    max-width: 100px;
+    width: 100%;
+}
+ .namae{
+    color: azure;
+ }
+ 
+ .footer{
+     background-color: #000;
+     color: #FFF;
+     text-align: center;
+     padding: 20px;
+     margin-top: 200px;
+     font-size: 10px;
+     line-height: 16px;
+ }
+ .footer a{
+     color: #FFF;
+ }
+ .betu{
+    font-size: 20px;
+    padding-top: 30px;
+ }
